@@ -11,9 +11,9 @@ export class myFav extends Component {
         this.state = {
             favArray: [],
             show: false,
-            index=-1,
-            strDrink='',
-            strDrinkThumb=''
+            index: -1,
+            strDrink: '',
+            strDrinkThumb: ''
         }
     }
     componentDidMount = async () => {
