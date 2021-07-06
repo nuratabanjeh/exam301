@@ -12,7 +12,7 @@ export class Home extends Component {
     }
     componentDidMount = async () => {
         // const server = 'http://localhost:3001';
-        const server = 'https://exam301backendnura.herokuapp.com/';
+        const server = 'https://exam301backendnura.herokuapp.com';
         const allData = await axios.get(`${server}/all`)
         console.log("🚀 ~ file: Home.js ~ line 8 ~ Home ~ componentDidMount= ~ allData", allData.data)
         this.setState({
@@ -22,7 +22,7 @@ export class Home extends Component {
     }
     addfav = async (idx) => {
         // const server = 'http://localhost:3001';
-        const server = 'https://exam301backendnura.herokuapp.com/';
+        const server = 'https://exam301backendnura.herokuapp.com';
         const obj = {
             strDrink: this.state.allData[idx].strDrink,
             strDrinkThumb: this.state.allData[idx].strDrinkThumb,

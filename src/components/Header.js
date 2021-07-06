@@ -11,8 +11,8 @@ export class Header extends Component {
                 <Navbar.Brand >exam App</Navbar.Brand>
 
 
-                <Link to="/">Home</Link>
-                <Link to="/fav">Fav</Link>
+                <Link style={{ color: "white" }} to="/">Home</Link>
+                <Link style={{ color: "white" }} to="/fav">Fav</Link>
 
 
             </Navbar>

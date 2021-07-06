@@ -19,7 +19,7 @@ export class MyFav extends Component {
     }
     componentDidMount = async () => {
         // const server = 'http://localhost:3001';
-        const server = 'https://exam301backendnura.herokuapp.com/';
+        const server = 'https://exam301backendnura.herokuapp.com';
         const favData = await axios.get(`${server}/getFav`);
         // console.log("🚀 ~ file: MyFav.js ~ line 8 ~ MyFav ~ componentDidMount=async ~ favData", favData.data)
         this.setState({
@@ -29,7 +29,7 @@ export class MyFav extends Component {
     delete = async (id) => {
         // console.log("🚀 ~ file: MyFav.js ~ line 23 ~ MyFav ~ delete ~ id", id)
         // const server = 'http://localhost:3001';
-        const server = 'https://exam301backendnura.herokuapp.com/';
+        const server = 'https://exam301backendnura.herokuapp.com';
 
         const newArray = await axios.delete(`${server}/deleteFav?id=${id}`);
         console.log("🚀 ~ file: MyFav.js ~ line 27 ~ MyFav ~ delete ~ newArray", newArray)
@@ -62,7 +62,7 @@ export class MyFav extends Component {
             idDrink: this.state.favArray[this.state.index]['_id']
         }
         // const server = 'http://localhost:3001';
-        const server = 'https://exam301backendnura.herokuapp.com/';
+        const server = 'https://exam301backendnura.herokuapp.com';
         console.log("🚀 ~ file: MyFav.js ~ line 69 ~ MyFav ~ updateData= ~ obj", this.state.favArray)
         console.log("🚀 ~ file: MyFav.js ~ line 69 ~ MyFav ~ updateData= ~ obj", this.state.index)
         const newData = await axios.put(`${server}/updateFav`, obj);
